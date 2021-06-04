@@ -1,6 +1,6 @@
 const users = [];
 
-const adduser = ({ id, username, room }) => {
+const addUser = ({ id, username, room }) => {
   // Clean the data
   username = username.trim().toLowerCase();
   room = room.trim().toLowerCase();
@@ -56,7 +56,7 @@ const getUsersInRoom = (room) => {
 }
 
 module.exports = {
-  adduser,
+  addUser,
   removeUser,
   getUser,
   getUsersInRoom
